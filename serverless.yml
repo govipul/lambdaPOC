@@ -27,13 +27,11 @@ provider:
   region: eu-north-1
 
 # you can add packaging information here
-#package:
-#  artifact: build/distributions/hello.zip
+package:
+  artifact: build/distributions/lambdaserverless.zip
 
 functions:
   lambdaserverless:
-    #package:
-    #  artifact: lambdaserverless.jar
     handler: com.serverless.Handler
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

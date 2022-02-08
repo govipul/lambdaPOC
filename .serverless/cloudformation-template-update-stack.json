@@ -71,10 +71,10 @@
         }
       }
     },
-    "HelloLogGroup": {
+    "LambdaserverlessLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/lambdaserverless-dev-hello"
+        "LogGroupName": "/aws/lambda/lambdaserverless-dev-lambdaserverless"
       }
     },
     "IamRoleLambdaExecution": {
@@ -154,18 +154,18 @@
         }
       }
     },
-    "HelloLambdaFunction": {
+    "LambdaserverlessLambdaFunction": {
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambdaserverless/dev/1644350906244-2022-02-08T20:08:26.244Z/build/distributions/hello.zip"
+          "S3Key": "serverless/lambdaserverless/dev/1644353810223-2022-02-08T20:56:50.223Z/build/distributions/lambdaserverless.zip"
         },
         "Handler": "com.serverless.Handler",
         "Runtime": "java8",
-        "FunctionName": "lambdaserverless-dev-hello",
+        "FunctionName": "lambdaserverless-dev-lambdaserverless",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -176,17 +176,17 @@
         }
       },
       "DependsOn": [
-        "HelloLogGroup"
+        "LambdaserverlessLogGroup"
       ]
     },
-    "HelloLambdaVersionicDpvJcr6bj3xpAanGMf9FdwZ4EZYrYVaVYlef56oQ": {
+    "LambdaserverlessLambdaVersion1DzvIoUvijm5jP6jv8iwxZ15k92WbsyXilzb0Fhyo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
-          "Ref": "HelloLambdaFunction"
+          "Ref": "LambdaserverlessLambdaFunction"
         },
-        "CodeSha256": "1ewFjWjJvlMUlToH46HwyyBzqEGop4c9/L2leHyBMvs="
+        "CodeSha256": "4ftanM4AIpDLl8kMNRarMfY6yWPd9iHZ2C3BMo4oJjs="
       }
     }
   },
@@ -199,13 +199,13 @@
         "Name": "sls-lambdaserverless-dev-ServerlessDeploymentBucketName"
       }
     },
-    "HelloLambdaFunctionQualifiedArn": {
+    "LambdaserverlessLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersionicDpvJcr6bj3xpAanGMf9FdwZ4EZYrYVaVYlef56oQ"
+        "Ref": "LambdaserverlessLambdaVersion1DzvIoUvijm5jP6jv8iwxZ15k92WbsyXilzb0Fhyo"
       },
       "Export": {
-        "Name": "sls-lambdaserverless-dev-HelloLambdaFunctionQualifiedArn"
+        "Name": "sls-lambdaserverless-dev-LambdaserverlessLambdaFunctionQualifiedArn"
       }
     }
   }
