@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambdaserverless/dev/1644353810223-2022-02-08T20:56:50.223Z/build/distributions/lambdaserverless.zip"
+          "S3Key": "serverless/lambdaserverless/dev/1644354780336-2022-02-08T21:13:00.336Z/build/distributions/lambdaserverless.zip"
         },
         "Handler": "com.serverless.Handler",
         "Runtime": "java8",
