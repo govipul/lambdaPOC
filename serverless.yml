@@ -23,7 +23,7 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: java8
-  stage: dev
+  stage: git-action
   region: eu-north-1
 
 # you can add packaging information here
